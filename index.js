@@ -37,6 +37,8 @@ client.on('message', (message) => {
           .setColor('#0011ff')
           .setFooter('2020년 07월 16일 기준입니다.', img)
 
+
+
       message.channel.send(embed)
     } else if(message.content == '!코로나') {
         let img = '';
@@ -54,9 +56,108 @@ client.on('message', (message) => {
           .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 15일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355430')
           .setColor('#6799FF')
           .setFooter('BOT MADE BY RABBIT', img)
-          
-          
-      message.channel.send(embed)
+               message.channel.send(embed)
+
+               message.channel.send(Embed)
+              } else if(message.content == '!코로나') {
+                  let helpImg = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
+                  let commandList = [
+                    {name: '!코로나 전국', desc: '코로나 전국'},
+                    {name: '!코로나 서울', desc: '코로나 서울'},
+                    {name: '!코로나 인천', desc: '코로나 인천'},
+                    {name: '!코로나 경기', desc: '코로나 경기'},
+                ];
+                  let commandStr = '';
+                  let embed = new Discord.RichEmbed()
+                    .setAuthor('코로나', helpImg)
+                    .setColor('#ff00df')
+                    .setFooter(`BOT MADE BY RABBIT`)
+                    commandList.forEach(x => {
+                      commandStr += `• \`\`${changeCommandStringLength(`${x.name}`)}\`\` : **${x.desc}**\n`;
+                    });
+            
+                embed.addField('명령어: ', commandStr);
+               
+                message.channel.send(embed)
+
+    } else if(message.content == '!코로나 전국') {
+      let img = '';
+      let embed = new Discord.RichEmbed()
+        .setTitle('코로나-19 한국 현황')
+        .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
+        .addField('**최신 데이터**', '해당 자료는 2020년 7월 16일 00시 기준 자료입니다.')
+        .addField('**확진환자(누적)**', '13,612(+ 61)', true)
+        .addField('**완치환자(격리해제)**', '12,396(+ 48)', true)
+        .addField('**치료중(격리 중)**', '925(+ 11)', true)
+        .addField('**사망**', '291(+ 2)', true)
+        .addField('**누적확진률**', '1.0 %', true)
+        .addField('**치사율**', '2.14 %', true)
+        .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 16일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355439')
+        .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 15일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355430')
+        .setColor('#6799FF')
+        .setFooter('BOT MADE BY RABBIT', img)
+    message.channel.send(embed)
+
+  } else if(message.content == '!코로나 인천') {
+    let img = '';
+    let embed = new Discord.RichEmbed()
+      .setTitle('코로나-19 인천 현황')
+      .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
+      .addField('**최신 데이터**', '해당 자료는 2020년 7월 16일 00시 기준 자료입니다.')
+      .addField('**확진환자(누적)**', '367(+ 3)', true)
+      .addField('**완치환자(격리해제)**', '336', true)
+      .addField('**치료중(격리 중)**', '29', true)
+      .addField('**사망**', '2', true)
+      .addField('**10만명당 발생률**', '12.41명', true)
+      .addField('**전국대비 확진자 비율**', '2.7 %', true)
+      .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 16일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355439')
+      .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 15일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355430')
+      .setColor('#6799FF')
+      .setFooter('BOT MADE BY RABBIT', img)
+      
+      
+  message.channel.send(embed)
+
+} else if(message.content == '!코로나 서울') {
+  let img = '';
+  let embed = new Discord.RichEmbed()
+    .setTitle('코로나-19 서울 현황')
+    .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
+    .addField('**최신 데이터**', '해당 자료는 2020년 7월 16일 00시 기준 자료입니다.')
+    .addField('**확진환자(누적)**', '1,449(+ 7)', true)
+    .addField('**완치환자(격리해제)**', '1,286', true)
+    .addField('**치료중(격리 중)**', '154', true)
+    .addField('**사망**', '9', true)
+    .addField('**10만명당 발생률**', '14.89명', true)
+    .addField('**전국대비 확진자 비율**', '10.65 %', true)
+    .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 16일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355439')
+    .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 15일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355430')
+    .setColor('#6799FF')
+    .setFooter('BOT MADE BY RABBIT', img)
+    
+    
+message.channel.send(embed)
+
+} else if(message.content == '!코로나 경기') {
+  let img = '';
+  let embed = new Discord.RichEmbed()
+    .setTitle('코로나-19 경기 현황')
+    .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
+    .addField('**최신 데이터**', '해당 자료는 2020년 7월 16일 00시 기준 자료입니다.')
+    .addField('**확진환자(누적)**', '1,404(+21)', true)
+    .addField('**완치환자(격리해제)**', '1,165', true)
+    .addField('**치료중(격리 중)**', '211', true)
+    .addField('**사망**', '28', true)
+    .addField('**10만명당 발생률**', '10.60명', true)
+    .addField('**전국대비 확진자 비율**', '10.31 %', true)
+    .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 16일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355439')
+    .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 15일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355430')
+    .setColor('#6799FF')
+    .setFooter('BOT MADE BY RABBIT', img)
+    
+    
+message.channel.send(embed)
+
     } else if(message.content == '!재난문자') {
         let img = '';
         let embed = new Discord.RichEmbed()
