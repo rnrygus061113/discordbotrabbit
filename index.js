@@ -40,25 +40,7 @@ client.on('message', (message) => {
 
 
       message.channel.send(embed)
-    } else if(message.content == '!코로나') {
-        let img = '';
-        let embed = new Discord.RichEmbed()
-          .setTitle('코로나-19 한국 현황')
-          .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
-          .addField('**최신 데이터**', '해당 자료는 2020년 7월 16일 00시 기준 자료입니다.')
-          .addField('**확진환자(누적)**', '13,612(+ 61)', true)
-          .addField('**완치환자(격리해제)**', '12,396(+ 48)', true)
-          .addField('**치료중(격리 중)**', '925(+ 11)', true)
-          .addField('**사망**', '291(+ 2)', true)
-          .addField('**누적확진률**', '1.0 %', true)
-          .addField('**치사율**', '2.14 %', true)
-          .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 16일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355439')
-          .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 15일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355430')
-          .setColor('#6799FF')
-          .setFooter('BOT MADE BY RABBIT', img)
-               message.channel.send(embed)
 
-               message.channel.send(Embed)
               } else if(message.content == '!코로나') {
                   let helpImg = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
                   let commandList = [
