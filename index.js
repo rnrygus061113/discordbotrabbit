@@ -63,42 +63,13 @@ client.on('message', (message) => {
                
                 message.channel.send(embed)
                 
-    } else if(message.content == '!코로나 전세계순위') {
-        let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
-        let embed = new Discord.RichEmbed()
-          .setTitle('코로나-19 전세계 순위')
-          .setColor('#6799FF')
-          .addField('**데이터 출처 : COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)**', 'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6')
-          .addField('**미국 (3,576,156)**', '**브라질 (2,012,151)**', true)
-          .addField('**인도 (968,876)**', '**러시아 (751,612)**', true)
-          .addField('**페루 (341,586)**', '**남아프리카 (324,221)**', true)
-          .addField('**멕시코 (324,041)**', '**칠레 (323,041)**', true)
-          .addField('**영국 (294,116)**', '**이란 (267,061)**', true)
-          .addField('**스페인 (258,855)**', '**파키스탄 (257,914)**', true)
-          .addField('**이탈리 243,736)**', '**사우디 (243,236)**', true)
-          .addField('**터키 (216,873)**', '**프랑스 (211,102)**', true)
-          .addField('**독일 (201,450)**', '**방글라데시 (196,323)**', true)
-          .addField('**콜롬비아 (165,169)**', '**아르헨티나 (114,783)**', true)
-          .addField('**캐나다 (111,144)**', '**카타르 (105,477)**', true)
-          .addField('**이라크 (86,148)**', '**이집트 (85,771)**', true)
-          .addField('**중국 (85,314)**', '**인도네시아 (81,668)**', true)
-          .addField('**스웨덴 (76,877)**', '**에콰도르 (71,365)**', true)
-          .addField('**벨로루시 (65,623)**', '**카자흐스탄 (65,188)**', true)
-          .addField('**벨기에 (63,039)**','**오만 (62,574)**', true)
-          .addField('**총합**', '13,767,548', true)
-          .setFooter('BOT MADE BY RABBIT', img)
-
-
-
-      message.channel.send(embed)
-                
      } else if(message.content == '!코로나 순위') {
       let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
       let embed = new Discord.RichEmbed()
         .setTitle('코로나-19 한국 순위')
         .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
         .setColor('#6799FF')
-        .addField('**대구 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■ (6,929)**', '**서울 ■■■■■■■■■■■■■■■■■■■■■■ (1,458)**')
+        .addField('**대구 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ (6,929)**', '**서울 ■■■■■■■■■■■■■■■■■■■■■■ (1,458)**')
         .addField('**경기 ■■■■■■■■■■■■■■■■■■■■■ (1,419)**', '**경북 ■■■■■■■■■■■■■■■■■■■■ (1,393)**')
         .addField('**검역 ■■■■■■■■■■■■■■■■■ (931)**', '**인천 ■■■■■■■■■■■■■ (367)**')
         .addField('**충남 ■■■■■■■■■■■■ (185)**', '**광주 ■■■■■■■■■■■ (176)**')
