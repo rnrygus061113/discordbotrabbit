@@ -84,8 +84,8 @@ client.on('message', (message) => {
           .addField('**중국 (85,314)**', '**인도네시아 (81,668)**', true)
           .addField('**스웨덴 (76,877)**', '**에콰도르 (71,365)**', true)
           .addField('**벨로루시 (65,623)**', '**카자흐스탄 (65,188)**')
-          .addField('**벨기에 (63,039)**',' ', true)
-        .addField('**총합**', '13,767,548')
+          .addField('**벨기에 (63,039)**','**오만 (62,574)**', true)
+          .addField('**총합**', '13,767,548')
           .setFooter('BOT MADE BY RABBIT', img)
 
 
