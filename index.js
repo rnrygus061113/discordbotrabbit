@@ -262,5 +262,15 @@ async function AutoMsgDelete(message, str, delay = 3000) {
   }, delay);
 }
 
+const prefix = "!";
+if(!args[0].startsWith(prefix)) return;
+
+const cmd = args[0].substring(prefix.length);
+args.shift();
+
+if(!command.hasOwnProperty(cmd)) return msg.channel.send("없는 명령어 입니다!")
+
+command[cmd](msg, args);
+}); 
 
 client.login(token);
