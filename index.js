@@ -48,7 +48,7 @@ client.on('message', (message) => {
                     {name: '!코로나 서울', desc: '코로나 서울'},
                     {name: '!코로나 인천', desc: '코로나 인천'},
                     {name: '!코로나 경기', desc: '코로나 경기'},
-                    {name: '!코로나 순위', desc: '코로나 '},
+                    {name: '!코로나 순위', desc: '코로나 순위'},
                 ];
                   let commandStr = '';
                   let embed = new Discord.RichEmbed()
@@ -64,12 +64,29 @@ client.on('message', (message) => {
                 message.channel.send(embed)
 
      } else if(message.content == '!코로나 순위') {
-      let img = 'https://media.discordapp.net/attachments/728143877218762764/733532782587805766/d3dce2514361882b.png';
+      let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
       let embed = new Discord.RichEmbed()
         .setTitle('코로나-19 한국 순위')
         .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
-      .setThumbnail(img)  
-      .setColor('#6799FF')
+        .setColor('#6799FF')
+        .addField('**대구 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ (6929)')
+        .addField('**서울 ■■■■■■■■■■■■■■■■■■■■■■ (1458)')
+        .addField('**경기 ■■■■■■■■■■■■■■■■■■■■■ (1419)')
+        .addField('**경북 ■■■■■■■■■■■■■■■■■■■■ (1393)')
+        .addField('**검역 ■■■■■■■■■■■■■■■■■ (931)')
+        .addField('**인천 ■■■■■■■■■■■■■ (367)')
+        .addField('**충남 ■■■■■■■■■■■■ (185)')
+        .addField('**광주 ■■■■■■■■■■■ (176)')
+        .addField('**대전 ■■■■■■■■■■ (165)')
+        .addField('**부산 ■■■■■■■■■ (156)')
+        .addField('**경남 ■■■■■■■■■ (151)')
+        .addField('**강원 ■■■■■■■■ (72)')
+        .addField('**충북 ■■■■■■■■ (71)')
+        .addField('**울산 ■■■■■■ (56)')
+        .addField('**세종 ■■■■■ (50)')
+        .addField('**전북 ■■■ (38)')
+        .addField('**전남 ■■ (32)')
+        .addField('**제 ■ (23)')
         .setFooter('BOT MADE BY RABBIT', img)
     message.channel.send(embed)
                 
