@@ -68,7 +68,7 @@ client.on('message', (message) => {
         let embed = new Discord.RichEmbed()
           .setTitle('코로나-19 전세계 순위')
           .setColor('#6799FF')
-          .addField('**데이터 출처 : COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)**', 'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6', true)
+          .addField('**데이터 출처 : COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)**', 'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6')
           .addField('**미국 (3,576,156)**', '**브라질 (2,012,151)**', true)
           .addField('**인도 (968,876)**', '**러시아 (751,612)**', true)
           .addField('**페루 (341,586)**', '**남아프리카 (324,221)**', true)
