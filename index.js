@@ -214,6 +214,7 @@ message.channel.send(embed)
         {name: '!날씨', desc: '오늘의 날씨 보기!'},
         {name: '!한강물온도', desc: '한강물의 온도 보기!'},
         {name: '!청소 (관리자)', desc: '텍스트 지우기!'},
+        {name: '!역할추가 @추가할사람 @역할 (관리자)', desc: '역할추가!'},
         {name: '!오늘의 운세', desc: '오늘의 운세를 보여줍니다'},
     ];
       let commandStr = '';
