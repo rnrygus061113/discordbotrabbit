@@ -274,9 +274,9 @@ function changeCommandStringLength(str, limitLen = 8) {
   return tmp;
 }
 
-  let msg = await message.channel.send(str);
 async function AutoMsgDelete(message, str, delay = 1000) {
-  
+  let msg = await message.channel.send(str);
+
   setTimeout(() => {
     msg.delete();
   }, delay);
