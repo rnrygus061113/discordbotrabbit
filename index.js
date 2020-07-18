@@ -11,6 +11,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
   
   if(message.content.startsWith('!역할추가')) {
+    return message.reply('역할을 추가했습니다');
     if(message.channel.type == 'dm') {
       return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
     }
