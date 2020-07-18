@@ -238,8 +238,8 @@ message.channel.send(embed)
     var clearLine = message.content.slice('!청소 '.length);
     var isNum = !isNaN(clearLine)
 
-    if(isNum && (clearLine <= 0 || 200 < clearLine)) {
-      message.channel.send("1부터 200까지의 숫자만 입력해주세용!")
+    if(isNum && (clearLine <= 0 || 100 < clearLine)) {
+      message.channel.send("1부터 99까지의 숫자만 입력해주세용!")
       return;
     } else if(!isNum) {
       if(message.content.split('<@').length == 2) {
