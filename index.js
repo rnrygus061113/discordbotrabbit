@@ -8,10 +8,9 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) => {
-  MessageSave(message)
   if(message.author.bot) return;
-
-  if(message.content.startsWith('!뮤트')) {
+  
+  if(message.content.startsWith('!역할추가')) {
     if(message.channel.type == 'dm') {
       return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
     }
@@ -26,9 +25,6 @@ client.on('message', (message) => {
       message.member.guild.members.find(x => x.id == userId).addRole(role);
     }
   }
-
-client.on('message', (message) => {
-  if(message.author.bot) return;
 
   if(message.content == '!dwafawfawf') {
     return message.reply('2ms');
