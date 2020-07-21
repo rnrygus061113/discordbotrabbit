@@ -4,7 +4,7 @@ const token = process.env.token;
 
 client.on('ready', () => {
   console.log('봇이 켜졌습니다!');
-  client.user.setPresence({ game: { name: '!도움'}, status: 'online' })
+  client.user.setPresence({ Streaming: { name: '!도움'}, status: 'online' })
 });
 
 client.on('message', (message) => {
