@@ -41,7 +41,7 @@ client.on('message', (message) => {
       .addField('**미세먼지**', '보통(56)', true)
       .addField('**초미세먼지**', '보통(35)', true)
       .setColor('#F5FF00')
-      .setFooter('2020년 07월 18일 기준입니다', img)
+      .setFooter('2020년 07월 21일 기준입니다', img)
 
       message.channel.send(embed)
     } else if(message.content == '!한강물온도') {
