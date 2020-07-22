@@ -30,7 +30,7 @@ client.on('message', (message) => {
     let embed = new Discord.RichEmbed()
     .setColor('#0099ff')
     .setAuthor(message.author.username, message.author.avatarURL)
-    .addField(client.ping + ' ms')
+    .addField('PONG', client.ping + ' ms')
 message.channel.send(embed)
 
   if(message.content == '!dwafawfawf') {
@@ -41,23 +41,23 @@ message.channel.send(embed)
     let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
     let embed = new Discord.RichEmbed()
       .setTitle(':white_sun_cloud: 인천광역시 부평의 오늘날씨')
-      .addField('**온도**', '최저 22도\n최고28도', true)
-      .addField('**체감온도**', '30.7도', true)
+      .addField('**온도**', '최저 23도\n최고26도', true)
+      .addField('**체감온도**', '24.0도', true)
       .addField('**습도**', '최저 60도\n최고85도', true)
-      .addField('**날씨**', '흐림', true)
-      .addField('**미세먼지**', '보통(56)', true)
-      .addField('**초미세먼지**', '보통(35)', true)
+      .addField('**날씨**', '비', true)
+      .addField('**미세먼지**', '보통(31㎍/㎥)', true)
+      .addField('**초미세먼지**', '보통(23㎍/㎥)', true)
       .setColor('#F5FF00')
-      .setFooter('2020년 07월 21일 기준입니다', img)
+      .setFooter('2020년 07월 22일 기준입니다', img)
 
       message.channel.send(embed)
     } else if(message.content == '!한강물온도') {
         let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
         let embed = new Discord.RichEmbed()
           .setTitle(':ocean: 현재 한강물의 온도')
-          .addField('**한강물의 온도**', '24.2도', true)
+          .addField('**한강물의 온도**', '23.6도', true)
           .setColor('#0011ff')
-          .setFooter('2020년 07월 18일 기준입니다.', img)
+          .setFooter('2020년 07월 22일 기준입니다.', img)
 
 
 
@@ -67,9 +67,6 @@ message.channel.send(embed)
                   let helpImg = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
                   let commandList = [
                     {name: '!코로나 전국', desc: '코로나 전국'},
-                    {name: '!코로나 서울', desc: '코로나 서울'},
-                    {name: '!코로나 인천', desc: '코로나 인천'},
-                    {name: '!코로나 경기', desc: '코로나 경기'},
                     {name: '!코로나 순위', desc: '코로나 순위'},
                 ];
                   let commandStr = '';
@@ -91,16 +88,16 @@ message.channel.send(embed)
         .setTitle('코로나-19 한국 순위')
         .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
         .setColor('#6799FF')
-        .addField('**최신 데이터**', '해당 자료는 2020년 7월 18일 00시 기준 자료입니다.')
-        .addField('**대구 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ (6,932)**', '**서울 ■■■■■■■■■■■■■■■■■■■■■■ (1,464)**')
-        .addField('**경기 ■■■■■■■■■■■■■■■■■■■■■ (1,429)**', '**경북 ■■■■■■■■■■■■■■■■■■■■ (1,393)**')
-        .addField('**검역 ■■■■■■■■■■■■■■■■■ (943)**', '**인천 ■■■■■■■■■■■■■ (369)**')
-        .addField('**충남 ■■■■■■■■■■■■ (185)**', '**광주 ■■■■■■■■■■■ (176)**')
-        .addField('**대전 ■■■■■■■■■■ (165)**', '**부산 ■■■■■■■■■ (157)**')
-        .addField('**경남 ■■■■■■■■■ (153)**', '**강원 ■■■■■■■■ (72)**')
-        .addField('**충북 ■■■■■■■■ (71)**', '**울산 ■■■■■■ (57)**')
-        .addField('**세종 ■■■■■ (50)**', '**전북 ■■■ (38)**')
-        .addField('**전남 ■■ (33)**', '**제주 ■ (24)**')
+        .addField('**최신 데이터**', '해당 자료는 2020년 7월 22일 00시 기준 자료입니다.')
+        .addField('**대구 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ (6,937)**', '**서울 ■■■■■■■■■■■■■■■■■■■■■■ (1,514)**')
+        .addField('**경기 ■■■■■■■■■■■■■■■■■■■■■ (1,451)**', '**경북 ■■■■■■■■■■■■■■■■■■■■ (1,395)**')
+        .addField('**검역 ■■■■■■■■■■■■■■■■■ (997)**', '**인천 ■■■■■■■■■■■■■ (377)**')
+        .addField('**충남 ■■■■■■■■■■■■ (187)**', '**광주 ■■■■■■■■■■■ (191)**')
+        .addField('**대전 ■■■■■■■■■■ (166)**', '**부산 ■■■■■■■■■ (157)**')
+        .addField('**경남 ■■■■■■■■■ (156)**', '**강원 ■■■■■■■■ (72)**')
+        .addField('**충북 ■■■■■■■■ (72)**', '**울산 ■■■■■■ (57)**')
+        .addField('**세종 ■■■■■ (50)**', '**전북 ■■■ (39)**')
+        .addField('**전남 ■■ (35)**', '**제주 ■ (26)**')
         .setFooter('BOT MADE BY RABBIT', img)
     message.channel.send(embed)
                 
@@ -109,12 +106,12 @@ message.channel.send(embed)
       let embed = new Discord.RichEmbed()
         .setTitle('코로나-19 한국 현황')
         .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
-        .addField('**최신 데이터**', '해당 자료는 2020년 7월 18일 00시 기준 자료입니다.')
-        .addField('**확진환자(누적)**', '13,711(+ 39)', true)
-        .addField('**완치환자(격리해제)**', '12,519(+ 59)', true)
-        .addField('**치료중(격리 중)**', '898(- 21)', true)
-        .addField('**사망**', '294(+ 1)', true)
-        .addField('**누적확진률**', '1.0 %', true)
+        .addField('**최신 데이터**', '해당 자료는 2020년 7월 22일 00시 기준 자료입니다.')
+        .addField('**확진환자(누적)**', '13,879(+ 63)', true)
+        .addField('**완치환자(격리해제)**', '12,698(+ 55)', true)
+        .addField('**치료중(격리 중)**', '884(+ 7)', true)
+        .addField('**사망**', '297(+ 1)', true)
+        .addField('**누적확진률**', '0.9 %', true)
         .addField('**치사율**', '2.14 %', true)
         .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 18일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355464')
         .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 17일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355461')
@@ -122,74 +119,14 @@ message.channel.send(embed)
         .setFooter('BOT MADE BY RABBIT', img)
     message.channel.send(embed)
 
-  } else if(message.content == '!코로나 인천') {
-    let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
-    let embed = new Discord.RichEmbed()
-      .setTitle('코로나-19 인천 현황')
-      .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
-      .addField('**최신 데이터**', '해당 자료는 2020년 7월 18일 00시 기준 자료입니다.')
-      .addField('**확진환자(누적)**', '369(+ 2)', true)
-      .addField('**완치환자(격리해제)**', '342(+ 1)', true)
-      .addField('**치료중(격리 중)**', '25(+ 1)', true)
-      .addField('**사망**', '2(+ 0)', true)
-      .addField('**10만명당 발생률**', '12.48명', true)
-      .addField('**전국대비 확진자 비율**', '2.69 %', true)
-      .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 18일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355464')
-      .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 17일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355461')
-      .setColor('#6799FF')
-      .setFooter('BOT MADE BY RABBIT', img)
-      
-      
-  message.channel.send(embed)
-
-} else if(message.content == '!코로나 서울') {
-  let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
-  let embed = new Discord.RichEmbed()
-    .setTitle('코로나-19 서울 현황')
-    .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
-    .addField('**최신 데이터**', '해당 자료는 2020년 7월 18일 00시 기준 자료입니다.')
-    .addField('**확진환자(누적)**', '1,464(+ 6)', true)
-    .addField('**완치환자(격리해제)**', '1,318(+ 18)', true)
-    .addField('**치료중(격리 중)**', '137(- 12)', true)
-    .addField('**사망**', '9(+ 0)', true)
-    .addField('**10만명당 발생률**', '15.04명', true)
-    .addField('**전국대비 확진자 비율**', '10.68 %', true)
-    .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 18일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355464')
-    .addField('**- 최신 브리핑 2 : 코로나바이러스감염증-19 국내 발생 현황 (7월 17일 정례브리핑)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355461')
-    .setColor('#6799FF')
-    .setFooter('BOT MADE BY RABBIT', img)
-    
-    
-message.channel.send(embed)
-
-} else if(message.content == '!코로나 경기') {
-  let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
-  let embed = new Discord.RichEmbed()
-    .setTitle('코로나-19 경기 현황')
-    .addField('**데이터 출처 : Ministry of Health and Welfare of Korea**', 'http://ncov.mohw.go.kr/index.jsp', true)
-    .addField('**최신 데이터**', '해당 자료는 2020년 7월 16일 00시 기준 자료입니다.')
-    .addField('**확진환자(누적)**', '1,429(+10)', true)
-    .addField('**완치환자(격리해제)**', '1,201(+ 16)', true)
-    .addField('**치료중(격리 중)**', '199(- 6)', true)
-    .addField('**사망**', '29(+ 1)', true)
-    .addField('**10만명당 발생률**', '10.78명', true)
-    .addField('**전국대비 확진자 비율**', '10.42 %', true)
-    .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 18일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355464')
-    .addField('**- 최신 브리핑 1 : 코로나바이러스감염증-19 국내 발생 현황 (7월 18일 0시)**', '링크 : http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=355464')
-    .setColor('#6799FF')
-    .setFooter('BOT MADE BY RABBIT', img)
-    
-    
-message.channel.send(embed)
-
     } else if(message.content == '!재난문자') {
         let img = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
         let embed = new Discord.RichEmbed()
           .setTitle(':loudspeaker: 재난문자')
           .addField('**데이터 출처 : 대한민국 재난안전포털**', 'https://www.safekorea.go.kr/idsiSFK/neo/main_m/dis/disasterDataList.html')
-          .addField('**2020/07/18 13:00:28 재난문자[태안군청]**', '[태안군청] 이동이 많은 주말. 밀집지역&middot;시설 방문 자제, 환기 및 소독, 외출 시 마스크 착용, 손 씻기, 2m거리두기 등 더욱 철저한 방역수칙 준수 바랍니다.')
-          .addField('**2020/07/18 12:44:03 재난문자[곡성군청]**', '[곡성군청] 주말 타지역 방문 및 종교집회, 모임,외출 등을 자제하시고 단체식사 금지와 생활속 거리두기 수칙 준수 바랍니다. 최선의 예방백신은 마스크 착용입니다!')
-          .addField('**2020/07/18 12:21:02 재난문자[성동구청]**', '[성동구청] 7.18(토) 53번 확진자 발생(52번 확진자의 동거가족)/ 성수고 388명 전원음성/ c19.sd.go.kr')
+          .addField('**2020/07/22 18:32:55 재난문자[강남군청]**', '[태안군청] 이동이 많은 주말. 밀집지역&middot;시설 방문 자제, 환기 및 소독, 외출 시 마스크 착용, 손 씻기, 2m거리두기 등 더욱 철저한 방역수칙 준수 바랍니다.')
+          .addField('**2020/07/22 18:28:40 재난문자[동작군청]**', '[곡성군청] 주말 타지역 방문 및 종교집회, 모임,외출 등을 자제하시고 단체식사 금지와 생활속 거리두기 수칙 준수 바랍니다. 최선의 예방백신은 마스크 착용입니다!')
+          .addField('**2020/07/22 18:12:00 재난문자[중구청]**', '[성동구청] 7.18(토) 53번 확진자 발생(52번 확진자의 동거가족)/ 성수고 388명 전원음성/ c19.sd.go.kr')
           .setColor('#FF0000#FF0000')
           .setFooter('최근 발송된 3개의 재난문자를 보여줍니다', img)
 
@@ -204,14 +141,6 @@ message.channel.send(embed)
         .setTitle(Real)
 
     message.channel.send(Embed)
-  } else if(message.content == '!ping') {
-      const Random = ["43ms","41ms","31ms","22ms","53ms","26ms","43ms","41ms","31ms","22ms","53ms","26ms","43ms","41ms","31ms","22ms","53ms","26ms","43ms","41ms","31ms","22ms","53ms","26ms"]
-      const Real = Random[Math.floor(Math.random()*Random.length) + 1]
-      const Embed = new Discord.RichEmbed()
-        .setFooter('BOT MADE BY RABBIT')
-        .setTitle(Real)
-
-    message.channel.send(Embed)
   } else if(message.content == '!도움') {
       let helpImg = 'https://media.discordapp.net/attachments/699520044811550773/721287727659745360/1.png';
       let commandList = [
@@ -223,6 +152,7 @@ message.channel.send(embed)
         {name: '!청소 (관리자)', desc: '텍스트 지우기!'},
         {name: '!역할추가 @추가할사람 @역할 (관리자)', desc: '역할추가!'},
         {name: '!오늘의 운세', desc: '오늘의 운세를 보여줍니다'},
+        {name: '!핑', desc: ' 보여줍니다'},
     ];
       let commandStr = '';
       let embed = new Discord.RichEmbed()
