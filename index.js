@@ -25,6 +25,13 @@ client.on('message', (message) => {
       message.member.guild.members.find(x => x.id == userId).addRole(role);
     }
   }
+  
+  if(message.content.startsWith('!핑')) {
+    let embed = new Discord.RichEmbed()
+    .setColor('#0099ff')
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField(client.ping + ' ms')
+message.channel.send(embed)
 
   if(message.content == '!dwafawfawf') {
     return message.reply('2ms');
